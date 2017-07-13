@@ -95,12 +95,20 @@ namespace DictionariesPractice
                 {"Bears", 7 },
                 {"Gorillas", 4 },
                 {"Camels", 3 },
-                {"zlephants", 2 },
+                {"Elephants", 2 },
                 {"Hippos", 9 },
                 {"Panters", 1 }
             };
-            Console.WriteLine(zooAnimals.Keys.Max()); 
+            Console.WriteLine(zooAnimals.Keys.Max());
             //Console.WriteLine(zooAnimals.Keys."Monk);
+            foreach (KeyValuePair<string, int> animal in zooAnimals)
+            {
+                if (animal.Key == "Monkeys")
+                {
+                    Console.WriteLine(animal.Value);
+                }
+
+            }
 
 
         }
